@@ -1,3 +1,5 @@
+package task2020;
+
 import java.util.Scanner;
 
 public class Solution {
@@ -8,7 +10,7 @@ public class Solution {
         int maxRepeatNumber = 0;
         int tempRepeats = 1;
         int tempNumber = scanner.nextInt();
-        int currentNumber = 0;
+        int currentNumber;
         for (int i = 0; i < countOfNumber - 1; i++) {
 
             currentNumber = scanner.nextInt();
