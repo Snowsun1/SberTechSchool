@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int lenArr = scanner.nextInt();
         ArrayList<Integer> arrayList = toArr(lenArr, scanner);
         for (int i = 0; i < 2; i++) {
@@ -15,7 +16,8 @@ public class Solution {
                 arrayList.set(arrayList.indexOf(maxOfArray), maxOfArray / 2);
             }
         }
-        for(int i = 0; i < lenArr; i ++){
+
+        for (int i = 0; i < lenArr; i++) {
             System.out.println(arrayList.get(i));
         }
 

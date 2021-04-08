@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         int countOfNumber = scanner.nextInt();
         int maxRepeats = 0;
         int maxRepeatNumber = 0;
@@ -34,6 +35,7 @@ public class Solution {
             maxRepeatNumber = tempNumber;
             maxRepeats = tempRepeats;
         }
+
         System.out.println(maxRepeatNumber + " " + maxRepeats);
 
 
