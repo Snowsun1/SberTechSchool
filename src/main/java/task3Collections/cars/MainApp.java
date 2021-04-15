@@ -22,8 +22,7 @@ public class MainApp {
         for (Car car : cars) {
             if (sortCars.containsKey(car.getType())) {
                 sortCars.get(car.getType()).add(car.getModel());
-            }
-            else {
+            } else {
                 ArrayList<String> list = new ArrayList<>();
                 list.add(car.getModel());
                 sortCars.put(car.getType(), list);

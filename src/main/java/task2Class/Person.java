@@ -40,7 +40,7 @@ public class Person {
         if (this.man) {
             System.out.println("Пол - женский");
         } else System.out.println("Пол - мужской");
-        if (this.spouse != null){
+        if (this.spouse != null) {
             System.out.println("В браке с " + this.spouse.name);
         } else System.out.println("Не состоит в браке");
     }
