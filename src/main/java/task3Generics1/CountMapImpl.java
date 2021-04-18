@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 
 
-public class CountMapImpl<T> implements CountMap<T>{
+public class CountMapImpl<T> implements CountMap<T> {
 
     private final HashMap<T, Integer> hashmap;
 
@@ -54,6 +54,7 @@ public class CountMapImpl<T> implements CountMap<T>{
     public Map<T, Integer> toMap() {
         return new HashMap<>(hashmap);
     }
+
     // Записись в destination с учётом того что в нём лежало ранее
     @Override
     public void toMap(Map<T, Integer> destination) {
