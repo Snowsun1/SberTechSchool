@@ -17,11 +17,11 @@ public class MainApp {
         map.add(6);
         map.add(5);
         map.add(10);
-//        map2.add(6);
-//        map2.add(5);
-//        map2.add(10);
-//        map.addAll(map2);
-//        map.toMap(hashMap);
+        map2.add(6);
+        map2.add(5);
+        map2.add(10);
+        map.addAll(map2);
+        map.toMap(hashMap);
         int count = map.getCount(5);  // 2
 //        int count = map.getCount(6);  // 1
 //        int count = map.getCount(10); // 3

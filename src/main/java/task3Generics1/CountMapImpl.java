@@ -1,6 +1,7 @@
 package task3Generics1;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
 
@@ -56,11 +57,12 @@ public class CountMapImpl<T> implements CountMap<T>{
     // Записись в destination с учётом того что в нём лежало ранее
     @Override
     public void toMap(Map<T, Integer> destination) {
+        HashMap<T, Integer> hashMapTemp = new HashMap<>(hashmap);
         if (destination != null) {
             for (Map.Entry<T, Integer> pair : destination.entrySet()) {
-                hashmap.put(pair.getKey(), hashmap.getOrDefault(pair.getKey(), 0) + pair.getValue());
+                hashMapTemp.put(pair.getKey(), hashMapTemp.getOrDefault(pair.getKey(), 0) + pair.getValue());
             }
-            destination.putAll(hashmap);
+            destination.putAll(hashMapTemp);
         }
 
     }
