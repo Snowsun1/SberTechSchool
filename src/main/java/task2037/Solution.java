@@ -16,7 +16,7 @@ public class Solution {
                 .filter(str -> k <= str.length())
                 .collect(Collectors.joining(","));
 
-        System.out.println(filteredList);
+
 
 
     }
