@@ -3,7 +3,7 @@ package task5.Calculator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CalculatorCashProxy implements Calculator {
+public class CalculatorCacheProxy implements Calculator {
     private final Calculator calculator = new CalculatorImpl();
 
     private final Map<Integer, Integer> map = new HashMap<>();

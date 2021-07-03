@@ -4,10 +4,10 @@ import java.lang.reflect.Proxy;
 
 public class MainDynamic {
     public static void main(String[] args) {
-        Calculator delegates = new CalculatorCashProxy();
+        Calculator delegates = new CalculatorCacheProxy();
         Calculator calculator = (Calculator) Proxy.newProxyInstance(ClassLoader.getSystemClassLoader(),
                 delegates.getClass().getInterfaces(),
-                new CashInvocationHandler(delegates));
+                new CacheInvocationHandler(delegates));
         System.out.println(calculator.calc(3));
         System.out.println(calculator.calc(3));
         System.out.println(calculator.calc(3));

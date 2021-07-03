@@ -5,6 +5,6 @@ public interface Calculator{
      * Расчет факториала числа.
      * @param number аргумент фаокториала
      */
-    @Cash
+    @Cache
     int calc (int number);
 }

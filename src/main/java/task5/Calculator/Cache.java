@@ -10,5 +10,5 @@ import java.lang.reflect.Method;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
-public @interface Cash {
+public @interface Cache {
 }
