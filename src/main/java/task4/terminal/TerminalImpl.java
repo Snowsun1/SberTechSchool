@@ -105,9 +105,9 @@ public class TerminalImpl implements Terminal {
                 } catch (NotMultiplicity100Exception e) {
                     System.out.println(e.getMessage());
                 }
+            } else {
+                System.out.println("Вы ещё не ввели PIN");
             }
-        } else {
-            System.out.println("Вы ещё не ввели PIN");
         }
     }
 }
